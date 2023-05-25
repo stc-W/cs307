@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+
+body {
+    background-color: #f8f8f8;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url("主页.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="submit"] {
+    padding: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #0066cc;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0052a3;
+}
+
+
+h3 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0052a3;
+}
+
+
+.container .post-link {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container .post-link:hover {
+    text-decoration: underline;
+}
+
+.container .post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .post-actions a {
+    margin-right: 10px;
+}
+
+.container .post-actions .button {
+    padding: 6px 12px;
+}
+
+.container .post-actions .button:hover {
+    background-color: #00497a;
+}
+
+.container .follow-button {
+    background-color: #e74c3c;
+}
+
+.container .follow-button:hover {
+    background-color: #c0392b;
+}
+
+.container #add {
+    font-size: 24px;
+}
+
+.container #add:hover {
+    background-color: #add8e6;
+    color: #fff;
+}
+
+
+

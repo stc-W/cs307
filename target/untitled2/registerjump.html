@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自动跳转</title>
+    <style>
+        p{
+            text-align: center;
+        }
+        span{
+            color: red;
+        }
+    </style>
+    <link href="css/registerjump.css" rel="stylesheet">
+</head>
+<body>
+<div>
+    <p>
+        注册成功啦！ <span id = "time">5</span>秒之后，自动跳转到登录页面...
+        如果没有跳转请点击<a href='/project/login.html'>这里</a>
+    </p>
+</div>
+<script>
+
+    var second = 5
+    function showTime(){
+        second--;
+        if(second<=0) {
+            location.href = "/project/login.html"
+        }
+        var time = document.getElementById("time");
+        time.innerHTML = second+""
+    }
+    setInterval(showTime,1000);
+</script>
+</body>
+</html>

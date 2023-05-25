@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link href="css/login.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="loginDiv">
+    <form action="/project/loginCheckServlet" id="form" method="post">
+        <h1 id="loginMsg">LOGIN IN</h1>
+        <p>用户名:<input id="username" name="username" type="text" placeholder="请输入用户名"></p>
+
+        <p>密     码:<input id="password" name="password" type="password" placeholder="请输入密码"></p>
+
+        <div id="subDiv">
+            <input type="submit" class="button" value="登陆">
+            <input type="reset" class="button" value="重新输入">&nbsp;&nbsp;&nbsp;
+            <a href="register.html">没有账号？点击注册</a>
+            <a href="/project/loginCheckServlet?username=!anonymous&password=11">匿名发言</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
